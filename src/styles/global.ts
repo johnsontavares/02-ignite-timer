@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
     *{
@@ -6,16 +6,20 @@ export const GlobalStyle = createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
     }
+    h1{
+        margin: 0;
+    }
 
     :focus{
         outline: 0;
-        box-shadow: 0 0 0 2px ${props => props.theme['green-500']}
+        box-shadow: 0 0 0 2px ${(props) => props.theme["green-500"]}
 
     }
 
     body{
-        background: ${props => props.theme['gray-900']};
-        color: ${props =>  props.theme['gray-300']}
+        background: ${(props) => props.theme["gray-900"]};
+        color: ${(props) => props.theme["gray-300"]};
+        -webkit-font-smoothing: antialiased;
     }
 
     border-style, input, textarea, button{
